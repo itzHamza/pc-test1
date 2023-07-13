@@ -1,0 +1,234 @@
+<html>
+<style>
+    .container {
+    position: relative;
+
+}
+.gg{
+  width: 100%;
+}
+.gg .container .card {
+    position: relative;
+    width:96%;
+    height: 350px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    margin-right: 0;
+    
+
+}
+
+.container .card:before {
+    content: "";
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    padding: 35px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1BBFE9;
+    clip-path: circle(100px at 20% 10%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+.card .ryzen:after {
+  content: "RYZEN";
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  font-size: 100px;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(255, 255, 255, 0.04);
+}
+.card .msi:after {
+  content: "MSI";
+  position: absolute;
+  top: 30%;
+  left: -15%;
+  font-size: 180px;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(255, 255, 255, 0.04);
+}
+.card .amd:after {
+  content: "AMD";
+  position: absolute;
+  top: 30%;
+  left: -12%;
+  font-size: 150px;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(255, 255, 255, 0.04);
+}
+.card .asus:after {
+  content: "ASUS";
+  position: absolute;
+  top: 35%;
+  left: -12%;
+  font-size: 120px;
+  font-weight: 800;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: rgba(255, 255, 255, 0.04);
+}
+.container .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(-25%);
+    transition: 0.7s ease;
+    /* bug  */
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 100%;
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 90;
+}
+
+.container .card:hover .contentBx {
+    height: 190px;
+
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 130%;
+  padding-bottom: 10px;
+}
+
+.container .card .contentBx a {
+  font-family:'Source Sans Pro', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3e66a8;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.3;
+    transform: translateY(20px);
+    transition: 0.2s;
+    
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(20px);
+    transition-delay: 0.5s;
+} 
+
+.card .contentBx .pp:hover{
+  background-color: #294470;
+}
+</style>
+<body>
+
+<div class="gg">
+
+
+    <span><div class="container">
+        <div class="card">
+        <div class="msi">
+<div class="imgBx"><img src="https://asset.msi.com/resize/image/global/product/product_1641349912be17d37c241611c69dbccce97e6e3bfe.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="">
+</div></div>               
+<div class="contentBx"><h2> MSI RTX 3050 VENTUS 2X OC 8GB <br> <div class="hh"> 1000.00 DZD </div></h2>
+<a  class="pp" href="">see more</a></div></div></div></span>
+
+
+<span><div class="container">
+<div class="card">
+<div class="ryzen">
+<div class="imgBx"><img src="https://www.amd.com/system/files/styles/992px/private/2019-06/238593-ryzen-5-pib-left-facing-1260x709.png?itok=kG1oXJAS" alt="">
+</div></div>               
+<div class="contentBx"><h2> Ryzen 5 3600 <br> <div class="hh"> 1000.00 DZD </div></h2>
+<a href="">see more</a></div></div></div></span>
+
+
+
+
+<span><div class="container">
+<div class="card">
+<div class="amd">
+<div class="imgBx"><img src="https://www.amd.com/system/files/2021-07/910022-amd-radeon-6600XT-angle1260x709_0.png" alt="">
+</div></div>               
+<div class="contentBx"><h2> RX 6600 <br> <div class="hh"> 1000.00 DZD </div></h2>
+<a href="">see more</a></div></div></div></span>
+
+
+
+
+<span><div class="container">
+<div class="card">
+<div class="asus">
+<div class="imgBx"><img src="https://www.asus.com/media/global/products/bvceys3w8ug0apoa/P_setting_xxx_0_90_end_500.png" alt="">
+</div></div>               
+<div class="contentBx"><h2> Asus TUF B550M plus <br> <div class="hh"> 1000.00 DZD </div></h2>
+<a href="">see more</a></div></div></div></span>
+</div>
+
+
+</body>
+
+
+</html>
+
+<span><div class="container">
+  <div class="card">
+  <div class="msi">
+<div class="imgBx"><img src="https://asset.msi.com/resize/image/global/product/product_1641349912be17d37c241611c69dbccce97e6e3bfe.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" alt="">
+</div></div>               
+<div class="contentBx"><h2> MSI RTX 3050 VENTUS 2X OC 8GB <br> <div class="hh"> 1000.00 DZD </div></h2>
+<a  class="pp" href="" >see more</a></div></div></div></span>
+<!-- -->
+
+<span><div class="container">
+  <div class="card">
+  <div class="msi">
+<div class="imgBx"><img src="<?php echo $_POST["prodimg"] ; ?>" >
+</div></div>               
+<div class="contentBx"><h2><?php echo $_POST["prodname"] ; ?> <br> <div class="hh"> <?php echo $_POST["prodprice"] ; ?>.00 DZD </div></h2>
+<a  class="pp" href="" >see more</a></div></div></div></span>
+
+<!-- -->
+
+
+
+
+
+
+
+
